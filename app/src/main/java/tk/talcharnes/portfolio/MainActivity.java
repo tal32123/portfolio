@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    String toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,31 +16,24 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void toast (View view) {
-        Toast.makeText(this, toast, Toast.LENGTH_SHORT).show();
-    }
-    public void spotify(View view){
-        toast = "Spotify app will be available here";
-        toast(view);
-    }
-    public void scores(View view){
-        toast = "Scores app will be available here";
-        toast(view);
-    }
-    public void library(View view){
-        toast = "Library app will be available here";
-        toast(view);
-    }
-    public void build(View view){
-        toast = "Build it Bigger app will be available here";
-        toast(view);
-    }
-    public void xyz(View view){
-        toast = "XYZ app will be available here";
-        toast(view);
-    }
-    public void capstone(View view){
-        toast = "My Capstone app will be available here";
-        toast(view);
+        String toast = "";
+        switch (view.getId()) {
+                case R.id.spotify: toast = "Spotify streamer will show here";
+                    break;
+                case R.id.scores:  toast = "Scores app will show here";
+                    break;
+                case R.id.library:  toast = "Library app will show here";
+                    break;
+                case R.id.build:  toast = "Build it Bigger app will show here";
+                    break;
+                case R.id.xyz:  toast = "XYZ Reader app will show here";
+                    break;
+                case R.id.capstone:  toast = "My Capstone app will show here";
+                    break;
+            }
+            Toast.makeText(this, toast, Toast.LENGTH_SHORT).show();
+
+        }
     }
 
 
@@ -49,4 +41,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-}
+

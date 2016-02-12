@@ -21,32 +21,32 @@
     <Button
         style="@style/button"
         android:text="Spotify Streamer"
-        android:onClick="spotify"
+        android:onClick="toast"
         android:id="@+id/spotify"/>
     <Button
         style="@style/button"
         android:text="Scores App"
-        android:onClick="scores"
+        android:onClick="toast"
         android:id="@+id/scores"/>
     <Button
         style="@style/button"
         android:text="Library App"
-        android:onClick="library"
+        android:onClick="toast"
         android:id="@+id/library"/>
     <Button
         style="@style/button"
         android:text="Build It Bigger"
-        android:onClick="build"
+        android:onClick="toast"
         android:id="@+id/build"/>
     <Button
         style="@style/button"
         android:text="XYZ Reader"
-        android:onClick="xyz"
+        android:onClick="toast"
         android:id="@+id/xyz"/>
     <Button
         style="@style/button"
         android:background="@android:color/holo_red_light"
         android:text="Capstone: My App"
-        android:onClick="capstone"
+        android:onClick="toast"
         android:id="@+id/capstone"/>
 </LinearLayout>
